@@ -1,15 +1,18 @@
 {
-    "name": "laravel-zero/laravel-zero",
-    "description": "The Laravel Zero Framework.",
-    "keywords": ["framework", "laravel", "laravel zero", "console", "cli"],
-    "homepage": "https://laravel-zero.com",
+    "name": "ecwebservices/ghtags",
+    "description": "Sync your project's tags from GitHub",
+    "keywords": ["github", "console", "cli"],
     "type": "project",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/laravel-zero/laravel-zero/issues",
-        "source": "https://github.com/laravel-zero/laravel-zero"
+        "issues": "https://github.com/ECWebServices/ghtags/issues",
+        "source": "https://github.com/ECWebServices/ghtags"
     },
     "authors": [
+        {
+            "name": "Elijah cruz",
+            "email": "elijah@ec-ws.com"
+        },
         {
             "name": "Nuno Maduro",
             "email": "enunomaduro@gmail.com"
