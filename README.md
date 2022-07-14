@@ -26,7 +26,7 @@ So I would be getting the "vfatal: not a git repository (or any of the parent di
 Installing is as simple as a composer install:
 
 ```shell
-composer require ghtags/ghtags
+composer global require ecwebservices/ghtags
 ```
 
 Once you've done that, you'll need to create a Personal Access Token in your GitHub account. If you set the expiration date to "Never", you'll be able to use it forever.
