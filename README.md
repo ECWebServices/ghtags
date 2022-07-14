@@ -33,7 +33,7 @@ Once you've done that, you'll need to create a Personal Access Token in your Git
 
 The token will need to have the "repo" scope. This allows you to get the tags from your repos.
 
-Then we'll run the set:key command:
+Then we'll run the setup command:
 
 ```shell
 ghtags setup
@@ -54,7 +54,7 @@ ghtags set:key <token>
 To initialize GHTags, run the setup command from the root of your project:
 
 ```shell
-ghtags new:repo
+ghtags repo:new
 ```
 ### Updating Tags
 
@@ -62,4 +62,51 @@ ghtags new:repo
 ghtags update
 ```
 
-This will get all the tags from the repo and update your .env or ghtags.json file.
+This will get all the tags from the repo and update the database with the tags.
+
+### Syncing Tags
+
+```shell
+ghtags sync:all
+```
+
+This will get the latest tags from the repo and update your tag file.
+
+```shell
+ghtags sync:single <name>
+```
+
+This will get the latest tag from the database and update your tag file.
+
+### Refreshing Tags
+
+```shell
+ghtags refresh
+```
+
+Use this command to remove all the tags from the database and get them again.
+
+### Deleting Project
+
+```shell
+ghtags repo:delete <name>
+```
+
+This will delete the project from the database as well as all the tags associated with it in the database.
+
+
+### Updating Project
+
+```shell
+ghtags repo:update <name>
+```
+
+This will update the project in the database.
+
+## Contributing
+
+We welcome contributions to GHTags. You can either fork the repo and make a pull request, or you can submit an issue or pull request.
+
+## License
+
+This software is licensed under the [MIT license](LICENSE).
