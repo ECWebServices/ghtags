@@ -74,7 +74,7 @@ class NewRepo extends Command
         }
 
         // Get the latest Key from the Database
-        $token = DB::table('keys')->orderBy('id', 'desc')->first();
+        $token = DB::table('key')->orderBy('id', 'desc')->first();
 
         // If there are no keys in the database, we can't continue
         if (!$token) {
