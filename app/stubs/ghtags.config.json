@@ -1,0 +1,7 @@
+{
+    "name": "name",
+    "store": ".env",
+    "store_type": "env",
+    "store_key": "name.tag",
+    "repository": "elijahcruz12/ghtags"
+}
