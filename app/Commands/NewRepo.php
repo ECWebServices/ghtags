@@ -85,7 +85,7 @@ class NewRepo extends Command
         }
 
         // Make sure we can find the repository on GitHub
-        $repo_check = Http::withHeaders(['Accept' => 'application/vnd.github.v3+json', 'Authorization' => 'token ' . $token])->get("https://api.github.com/repos/$repo");
+        $repo_check = Http::withHeaders(['Accept' => 'application/vnd.github.v3+json', 'Authorization' => 'token ' . $token->key])->get("https://api.github.com/repos/$repo");
 
         if ($repo_check->status() === 301) {
             $this->info("\n\n");
